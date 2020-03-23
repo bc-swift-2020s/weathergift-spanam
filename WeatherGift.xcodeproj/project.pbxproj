@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		AC28C24224293FAA00437830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28C24124293FAA00437830 /* AppDelegate.swift */; };
 		AC28C24424293FAA00437830 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28C24324293FAA00437830 /* SceneDelegate.swift */; };
-		AC28C24624293FAA00437830 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28C24524293FAA00437830 /* ViewController.swift */; };
 		AC28C24924293FAA00437830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC28C24724293FAA00437830 /* Main.storyboard */; };
 		AC28C24B24293FAF00437830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC28C24A24293FAF00437830 /* Assets.xcassets */; };
 		AC28C24E24293FAF00437830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC28C24C24293FAF00437830 /* LaunchScreen.storyboard */; };
+		AC28C2562429403000437830 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28C2552429403000437830 /* DetailVC.swift */; };
+		AC28C2582429481400437830 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28C2572429481400437830 /* ListVC.swift */; };
+		AC28C25A24294C7E00437830 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28C25924294C7E00437830 /* PageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC28C23E24293FAA00437830 /* WeatherGift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherGift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC28C24124293FAA00437830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC28C24324293FAA00437830 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC28C24524293FAA00437830 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC28C24824293FAA00437830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC28C24A24293FAF00437830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC28C24D24293FAF00437830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC28C24F24293FAF00437830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC28C2552429403000437830 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		AC28C2572429481400437830 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		AC28C25924294C7E00437830 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				AC28C24124293FAA00437830 /* AppDelegate.swift */,
 				AC28C24324293FAA00437830 /* SceneDelegate.swift */,
-				AC28C24524293FAA00437830 /* ViewController.swift */,
+				AC28C25924294C7E00437830 /* PageVC.swift */,
+				AC28C2552429403000437830 /* DetailVC.swift */,
+				AC28C2572429481400437830 /* ListVC.swift */,
 				AC28C24724293FAA00437830 /* Main.storyboard */,
 				AC28C24A24293FAF00437830 /* Assets.xcassets */,
 				AC28C24C24293FAF00437830 /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC28C24624293FAA00437830 /* ViewController.swift in Sources */,
+				AC28C2582429481400437830 /* ListVC.swift in Sources */,
+				AC28C25A24294C7E00437830 /* PageVC.swift in Sources */,
 				AC28C24224293FAA00437830 /* AppDelegate.swift in Sources */,
 				AC28C24424293FAA00437830 /* SceneDelegate.swift in Sources */,
+				AC28C2562429403000437830 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75ZA7HVM3F;
 				INFOPLIST_FILE = WeatherGift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75ZA7HVM3F;
 				INFOPLIST_FILE = WeatherGift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
